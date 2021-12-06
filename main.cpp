@@ -1,20 +1,17 @@
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 
-double myformula (int t,int y)
-{
-    double dydt;
-    dydt = exp(y) - 5*pow(y,6) + 1;
-    return dydt;
-}
 int main()
 {
-    int number = 24;
-    cout << number <<" the value number " << endl;
-    cout << myformula(8,5) << endl << "------------------------------------------" << endl;
-    cout << &myformula << endl;
+    goto again :
 
-    return 0;
+    int i;
+    cout >>"enter the number from 1 to 1000 : "
+    if (i>=1 && i<=1000)
+    {
+        cout >>
+    }
+
+
 }
