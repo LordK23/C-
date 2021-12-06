@@ -1,27 +1,20 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
-// I used my experience to write the theorem
-//I hope you like it
 
-// Nikzad Dehghani
-
+double myformula (int t,int y)
+{
+    double dydt;
+    dydt = exp(y) - 5*pow(y,6) + 1;
+    return dydt;
+}
 int main()
 {
-    cout <<"Fibonacci series:"<<endl;
-    cout <<"Enter the number of therms"<<endl;
-    int n;
-    cin >>n;
-    int first=0;
-    cout <<first;
-    int second=1;
-    cout <<"\n"<<second;
-    int third;
-    for(third=1;third<=n;third++)
-    {
-        third=first+second;
-        cout <<"\n"<<third;
-        first=second;
-        second=third;
-    }
+    int number = 24;
+    cout << number <<" the value number " << endl;
+    cout << myformula(8,5) << endl << "------------------------------------------" << endl;
+    cout << &myformula << endl;
+
+    return 0;
 }
